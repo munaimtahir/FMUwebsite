@@ -1,0 +1,65 @@
+# =====================================================
+# Drupal Project .gitignore
+# =====================================================
+# This repository contains a Drupal project using the
+# drupal/recommended-project template. The following
+# files and directories are excluded from version control.
+# =====================================================
+
+# =====================================================
+# Dependencies and Build Artifacts
+# =====================================================
+# Composer dependencies - install with `composer install`
+/vendor/
+
+# Drupal core and contributed modules/themes/profiles
+# These are installed via Composer and should not be committed
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+
+# Node.js dependencies
+/node_modules/
+
+# =====================================================
+# Runtime and Upload Files
+# =====================================================
+# User uploaded files (public and private)
+/web/sites/*/files/
+/web/sites/*/private/
+
+# =====================================================
+# Sensitive Configuration Files
+# =====================================================
+# Drupal settings files contain database credentials and secrets
+# These should be created per-environment during installation
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+/web/sites/*/services.yml
+
+# =====================================================
+# IDE and Editor Files
+# =====================================================
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*~
+
+# =====================================================
+# OS Generated Files
+# =====================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# =====================================================
+# Temporary and Cache Files
+# =====================================================
+/tmp/
+*.log
+*.cache
